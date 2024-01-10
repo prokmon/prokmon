@@ -1,0 +1,13 @@
+:root {
+  background-color: black;
+}
+
+body {
+  color: white;
+  padding-right: 0 !important;
+  overflow: auto !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
