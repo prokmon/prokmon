@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Typography, Grid, Stack, Button, Box } from "@mui/material";
-import logoImage from "./assets/logo-6.png";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useTheme } from "@mui/material/styles";
+import { Container, Typography, Grid, Stack, Button, Box } from '@mui/material';
+import logoImage from './assets/logo-6.png';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { useTheme } from '@mui/material/styles';
 
 function About() {
   const theme = useTheme();
@@ -11,8 +11,8 @@ function About() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+        behavior: 'smooth',
+        block: 'start',
       });
     }
   };
@@ -20,122 +20,127 @@ function About() {
   return (
     <Container
       id="about-section"
-      sx={{ marginBottom: "30px", marginTop: "40px" }}
+      sx={{ marginBottom: '30px', marginTop: '40px' }}
     >
       <Grid container spacing={2} alignItems="center" justifyContent="center">
-        <Grid item xs={6} sx={{ textAlign: { xs: "left", sm: "center" } }}>
+        <Grid item xs={6} sx={{ textAlign: { xs: 'left', sm: 'center' } }}>
           <Stack spacing={1}>
-            <Stack spacing={0}>
+            <Stack spacing={2}>
               <Typography
-                variant="h5"
+                variant="h4"
                 component="h1"
                 sx={{
-                  textAlign: "left",
-                  //marginTop: "80px",
-                  //marginBottom: "5px",
-                  fontWeight: "bold",
-                  fontSize: "50px",
+                  textAlign: 'left',
+                  fontWeight: 'bold',
+                  fontSize: '3rem', 
                 }}
               >
                 KMon
               </Typography>
 
               <Typography
-                variant="h6"
-                component="h1"
+                variant="subtitle1"
                 sx={{
-                  textAlign: "left",
-                  //marginTop: "0px",
-                  //marginBottom: "5px",
-                  fontWeight: "bold",
-                  fontSize: "50px",
+                  textAlign: 'left',
+                  fontWeight: 'bold',
+                  fontSize: '1.5rem', 
+                  color: '#',
                 }}
               >
-                Kafka Monitoring Tool
+                Open-source monitoring tool for Apache Kafka
               </Typography>
             </Stack>
 
-            <Typography
-              variant="h6"
-              sx={{ textAlign: "left", color: "#D6D6D6" }}
-            >
-              KMon is an open-source, real-time monitoring and alerting tool for Apache Kafka, developed under the tech accelerator OSLabs. 
-              
-              Fully compatible with KRaft mode, KMon provides a user-friendly and intuitive GUI for monitoring essential health metrics of Kafka clusters. We integrate customizable metric visualizations and alerts to streamline monitoring processes, enabling developers to proactively optimize Kafka performance and resolve issues.
+            <>
+
+            <Typography variant="h6" sx={{ textAlign: 'left', color: '#aaa', fontSize: '1.2rem' }}>
+              Fully compatible with KRaft mode, KMon provides a user-friendly and intuitive GUI for monitoring essential health metrics of Kafka clusters.
             </Typography>
+
+              <Typography
+                variant="h6"
+                sx={{ textAlign: 'left', color: '#aaa' }}
+              >
+                We integrate customizable metric visualizations and alerts to
+                streamline monitoring processes, enabling developers to
+                proactively optimize Kafka performance and resolve issues.
+              </Typography>
+            </>
           </Stack>
 
           <Box
             sx={{
-              display: "flex",
-              flexDirection: { xs: "column", sm: "row" },
-              justifyContent: { xs: "flex-start", sm: "flex-start" },
-              alignItems: "flex-start",
-              gap: { xs: "5px", md: "10px" },
-              marginTop: "30px",
-              width: "100%",
+              display: 'flex',
+              flexDirection: { xs: 'column', sm: 'row' },
+              justifyContent: { xs: 'flex-start', sm: 'flex-start' },
+              alignItems: 'flex-start',
+              gap: { xs: '5px', md: '10px' },
+              marginTop: '30px',
+              width: '100%',
             }}
           >
-            <Button
-              onClick={() => scrollTo("features-section")}
+            {/* <Button
+              onClick={() => scrollTo('features-section')}
               disableRipple
               disableElevation
               variant="contained"
               sx={{
-                backgroundColor: "#6874E8",
-                color: "white",
-                borderRadius: "20px",
-                padding: "10px 10px",
-                width: { xs: "100%", md: "180px" }, // Set to 100% on xs and 180px on md upwards
-                maxWidth: "180px",
-                transition: "transform 0.3s ease-in-out",
-                "&:hover": {
-                  backgroundColor: "#5563DF",
+                backgroundColor: '#6874E8',
+                color: 'white',
+                borderRadius: '20px',
+                padding: '10px 10px',
+                width: { xs: '100%', md: '180px' }, 
+                maxWidth: '180px',
+                transition: 'transform 0.3s ease-in-out',
+                '&:hover': {
+                  backgroundColor: '#5563DF',
                 },
-                [theme.breakpoints.up("md")]: {
-                  width: "180px",
+                [theme.breakpoints.up('md')]: {
+                  width: '180px',
                 },
               }}
             >
               Explore
               <ArrowForwardIosIcon />
-            </Button>
+            </Button> */}
 
-            <Button
+            {/* <Button
               //onClick={() => scrollTo("features-section")}
               disableRipple
               disableElevation
               variant="contained"
               sx={{
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "20px",
-                padding: "10px 10px",
-                width: { xs: "100%", md: "180px" }, // Set to 100% on xs and 180px on md upwards
-                maxWidth: "180px",
-                transition: "transform 0.3s ease-in-out",
-                "&:hover": {
-                  backgroundColor: "white",
+                backgroundColor: 'white',
+                color: 'black',
+                borderRadius: '20px',
+                padding: '10px 10px',
+                width: { xs: '100%', md: '180px' }, 
+                maxWidth: '180px',
+                transition: 'transform 0.3s ease-in-out',
+                '&:hover': {
+                  backgroundColor: 'white',
                 },
-                [theme.breakpoints.up("md")]: {
-                  width: "180px",
+                [theme.breakpoints.up('md')]: {
+                  width: '180px',
                 },
               }}
             >
               Get Started
               <ArrowForwardIosIcon />
-            </Button>
+            </Button> */}
           </Box>
         </Grid>
 
-        <Grid item xs={6} sx={{ textAlign: "center" }}>
-          <img src={logoImage} alt="Logo" 
-          style={{ 
-            width: '100%', // Use a percentage or fixed width that works for your design
-            maxWidth: '200px', // Use a max-width that looks good on mobile
-            height: 'auto'
-          }} 
-           />
+        <Grid item xs={6} sx={{ textAlign: 'center' }}>
+          <img
+            src={logoImage}
+            alt="Logo"
+            style={{
+              width: '100%', 
+              maxWidth: '200px', 
+              height: 'auto',
+            }}
+          />
         </Grid>
       </Grid>
     </Container>

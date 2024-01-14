@@ -117,14 +117,14 @@ function Header() {
             <Link to="features-section" spy={true} smooth={true} offset={-70} duration={500}>
               <Button variant='text' disableRipple disableElevation sx={{ '&:hover': { backgroundColor: 'transparent' }}}>Features</Button>
             </Link>
-            <Link to="demo-section" spy={true} smooth={true} offset={-70} duration={500}>
+            {/* <Link to="demo-section" spy={true} smooth={true} offset={-70} duration={500}>
               <Button variant='text' disableRipple disableElevation sx={{ '&:hover': { backgroundColor: 'transparent' }}}>Demo</Button>
-            </Link>
+            </Link> */}
             <Link to="team-section" spy={true} smooth={true} offset={-70} duration={500}>
               <Button variant='text' disableRipple disableElevation sx={{ '&:hover': { backgroundColor: 'transparent' }}}>Team</Button>
             </Link>
             <IconButton component="a" href="https://github.com/oslabs-beta/KMon" target="_blank" rel="noopener noreferrer" disableRipple disableElevation><GitHubIcon sx={{ width: '30px', height: '30px' }} /></IconButton>
-            <IconButton component="a" href="https://www.linkedin.com/company/kafkamonitoring" target="_blank" rel="noopener noreferrer" disableRipple disableElevation ><LinkedInIcon sx={{ width: '30px', height: '30px' }} /></IconButton>
+            <IconButton component="a" href="https://www.linkedin.com/company/kmon-dev" target="_blank" rel="noopener noreferrer" disableRipple disableElevation ><LinkedInIcon sx={{ width: '30px', height: '30px' }} /></IconButton>
           </Stack>
         </Box>
       </Container>
