@@ -1,18 +1,17 @@
 //import './App.css'
-import Header from './Header.jsx'
-import About from './About.jsx'
-import Features from './Features.jsx'
-import Demo from './Demo.jsx'
-import Team from './Team.jsx'
-import Footer from './Footer.jsx'
+import React from 'react';
+import Header from './Header.jsx';
+import About from './About.jsx';
+import Features from './Features.jsx';
+import Demo from './Demo.jsx';
+import Team from './Team.jsx';
+import Footer from './Footer.jsx';
 
-import { BreakpointProvider } from './BreakpointContext';
-
+import { BreakpointProvider } from './BreakpointContext.jsx';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function App() {
-
   const theme = createTheme({
     breakpoints: {
       values: {
@@ -75,20 +74,19 @@ function App() {
     },
     // ...other theme properties
   });
-  
 
   return (
-      <ThemeProvider theme={theme}>
-        <BreakpointProvider>
-          <Header />
-          <About />
-          <Features />
-          <Demo />
-          <Team />
-          <Footer />
-        </BreakpointProvider>
-      </ThemeProvider>
-  )
+    <ThemeProvider theme={theme}>
+      <BreakpointProvider>
+        <Header />
+        <About />
+        <Features />
+        {/* <Demo /> */}
+        <Team />
+        <Footer />
+      </BreakpointProvider>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

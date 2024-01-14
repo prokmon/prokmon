@@ -1,3 +1,4 @@
+import React from 'react';
 import { createContext, useContext } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
@@ -24,6 +25,6 @@ export function BreakpointProvider({ children }) {
     children: PropTypes.node.isRequired,
   };
   
-  export function useBreakpoint() {
+export function useBreakpoint() {
     return useContext(BreakpointContext);
   }

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Typography, Grid, Stack, Button, Box } from "@mui/material";
 import logoImage from "./assets/logo-6.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -58,9 +59,9 @@ function About() {
               variant="h6"
               sx={{ textAlign: "left", color: "#D6D6D6" }}
             >
-              KMon is Kafka cluster monitoring tool with customization for
-              metrics visualizations and configurable alerts that is fully
-              compatible with KRaft.
+              KMon is an open-source, real-time monitoring and alerting tool for Apache Kafka, developed under the tech accelerator OSLabs. 
+              
+              Fully compatible with KRaft mode, KMon provides a user-friendly and intuitive GUI for monitoring essential health metrics of Kafka clusters. We integrate customizable metric visualizations and alerts to streamline monitoring processes, enabling developers to proactively optimize Kafka performance and resolve issues.
             </Typography>
           </Stack>
 

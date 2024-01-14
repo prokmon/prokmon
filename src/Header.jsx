@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Stack, 
   Button, 
@@ -13,8 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuIcon from '@mui/icons-material/Menu';
 import logoImage from './assets/logo-6.png';
 import { Link } from 'react-scroll'
-import { useBreakpoint } from './BreakpointContext';
-import * as React from 'react';
+import { useBreakpoint } from './BreakpointContext.jsx';
 
 function Header() {
 

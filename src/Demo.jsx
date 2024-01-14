@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Typography, Grid, Stack, Card, CardMedia, Button } from '@mui/material'
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 
